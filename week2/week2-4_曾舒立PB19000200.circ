@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="mux21"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="mux21">
+    <a name="circuit" val="mux21"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="62" stroke="#000000" stroke-width="2" width="60" x="221" y="110"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="260" y="168">mux21</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="251" y="127">sel</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="265" y="147">out</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="232" y="135">a</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="232" y="166">b</text>
+      <circ-port height="8" pin="90,70" width="8" x="246" y="106"/>
+      <circ-port height="8" pin="90,130" width="8" x="216" y="126"/>
+      <circ-port height="8" pin="90,190" width="8" x="216" y="156"/>
+      <circ-port height="10" pin="300,150" width="10" x="275" y="135"/>
+      <circ-anchor facing="east" height="6" width="6" x="277" y="137"/>
+    </appear>
+    <wire from="(200,120)" to="(230,120)"/>
+    <wire from="(200,180)" to="(230,180)"/>
+    <wire from="(100,70)" to="(100,170)"/>
+    <wire from="(280,150)" to="(300,150)"/>
+    <wire from="(160,70)" to="(160,110)"/>
+    <wire from="(100,70)" to="(120,70)"/>
+    <wire from="(230,140)" to="(250,140)"/>
+    <wire from="(230,160)" to="(250,160)"/>
+    <wire from="(90,130)" to="(170,130)"/>
+    <wire from="(90,190)" to="(170,190)"/>
+    <wire from="(160,110)" to="(170,110)"/>
+    <wire from="(150,70)" to="(160,70)"/>
+    <wire from="(90,70)" to="(100,70)"/>
+    <wire from="(230,120)" to="(230,140)"/>
+    <wire from="(230,160)" to="(230,180)"/>
+    <wire from="(100,170)" to="(170,170)"/>
+    <comp lib="1" loc="(200,180)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(150,70)" name="NOT Gate"/>
+    <comp lib="1" loc="(280,150)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(90,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="a"/>
+    </comp>
+    <comp lib="6" loc="(178,249)" name="Text">
+      <a name="text" val="曾舒立PB19000200"/>
+      <a name="font" val="SansSerif plain 24"/>
+    </comp>
+    <comp lib="0" loc="(90,70)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="sel"/>
+    </comp>
+    <comp lib="1" loc="(200,120)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(90,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="b"/>
+    </comp>
+    <comp lib="0" loc="(300,150)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="out"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+  </circuit>
+  <circuit name="mux41">
+    <a name="circuit" val="mux41"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(130,120)" to="(130,130)"/>
+    <wire from="(130,240)" to="(130,250)"/>
+    <wire from="(290,10)" to="(290,160)"/>
+    <wire from="(130,160)" to="(130,180)"/>
+    <wire from="(130,280)" to="(130,300)"/>
+    <wire from="(180,210)" to="(180,230)"/>
+    <wire from="(90,120)" to="(130,120)"/>
+    <wire from="(90,180)" to="(130,180)"/>
+    <wire from="(90,240)" to="(130,240)"/>
+    <wire from="(90,300)" to="(130,300)"/>
+    <wire from="(320,190)" to="(360,190)"/>
+    <wire from="(110,50)" to="(110,210)"/>
+    <wire from="(210,140)" to="(240,140)"/>
+    <wire from="(210,260)" to="(240,260)"/>
+    <wire from="(240,140)" to="(240,180)"/>
+    <wire from="(90,50)" to="(110,50)"/>
+    <wire from="(130,130)" to="(150,130)"/>
+    <wire from="(130,160)" to="(150,160)"/>
+    <wire from="(130,250)" to="(150,250)"/>
+    <wire from="(130,280)" to="(150,280)"/>
+    <wire from="(240,180)" to="(260,180)"/>
+    <wire from="(240,210)" to="(260,210)"/>
+    <wire from="(240,210)" to="(240,260)"/>
+    <wire from="(90,10)" to="(290,10)"/>
+    <wire from="(110,210)" to="(180,210)"/>
+    <wire from="(110,50)" to="(180,50)"/>
+    <wire from="(180,50)" to="(180,110)"/>
+    <comp loc="(210,260)" name="mux21"/>
+    <comp lib="0" loc="(90,180)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="b"/>
+    </comp>
+    <comp lib="0" loc="(360,190)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="out"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(320,190)" name="mux21"/>
+    <comp lib="6" loc="(189,361)" name="Text">
+      <a name="text" val="曾舒立PB19000200"/>
+      <a name="font" val="SansSerif plain 24"/>
+    </comp>
+    <comp lib="0" loc="(90,240)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="c"/>
+    </comp>
+    <comp lib="0" loc="(90,300)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="d"/>
+    </comp>
+    <comp lib="0" loc="(90,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="a"/>
+    </comp>
+    <comp loc="(210,140)" name="mux21"/>
+    <comp lib="0" loc="(90,10)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="sel1"/>
+    </comp>
+    <comp lib="0" loc="(90,50)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="sel0"/>
+    </comp>
+  </circuit>
+</project>
